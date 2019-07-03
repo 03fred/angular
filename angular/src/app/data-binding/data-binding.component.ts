@@ -10,10 +10,14 @@ export class DataBindingComponent implements OnInit {
   
   valorInput:string = "";
   valorSalvoInput :string="";
-
+isMouseOver: boolean = false;
   cursoAngular: boolean = true;
   urlImage = 'http://lorempixel.com/400/200/';
 
+  onMouseOverOut(){
+
+    this.isMouseOver = !this.isMouseOver;
+  }
   salvarValor( valor ){
     this.valorSalvoInput = valor;
   }

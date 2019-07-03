@@ -54,11 +54,13 @@
         <button (click)="botaoclickado()" class="btn btn-primary">Me clique!</button>
         <br/>
         <br/>
-        <input #campoInput type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor(campoInput.value)" />
+        <input #campoInput type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor(campoInput.value)" (blur)="salvarValor(campoInput.value)" />
 
         <p> {{ valorInput }}</p>
 
         <p> {{ valorSalvoInput }}</p>
+
+        <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.hightlight]="isMouseOver">Passe o mouse sobre mim</span>
 
     </article>
 </section>
