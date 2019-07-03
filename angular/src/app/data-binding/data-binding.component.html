@@ -61,7 +61,6 @@
         <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.hightlight]="isMouseOver">Passe o mouse sobre mim</span>
 
     </article>
--->
 
 
     <article>
@@ -80,5 +79,13 @@
         <input type="number" [(ngModel)]="pessoa.idade" />
 
         <p>Meu nome é {{ pessoa.nome }} e minha idade é {{ pessoa.idade }}</p>
+    </article>
+    -->
+
+    <article>
+
+        <h3>Input/Output Properties</h3>
+
+        <app-curso [nome]="nomeDoCurso"></app-curso>
     </article>
 </section>
