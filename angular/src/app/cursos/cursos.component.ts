@@ -13,7 +13,6 @@ export class CursosComponent implements OnInit{
 
 constructor(private cursosServices: CursosService){
 this.nomePortal = 'http://www.google.com.br';
-//var service = new CursosService();
 this.cursos = this.cursosServices.getCursos();
 
 }
