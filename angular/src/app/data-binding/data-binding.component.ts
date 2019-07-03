@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
   url: string = 'http://www.google.com'
-  
+  pessoa : any = {
+    nome: 'fred',
+    idade: 20
+  }
   valorInput:string = "";
   valorSalvoInput :string="";
 isMouseOver: boolean = false;
   cursoAngular: boolean = true;
   urlImage = 'http://lorempixel.com/400/200/';
-
+nome: string ="abc";
   onMouseOverOut(){
 
     this.isMouseOver = !this.isMouseOver;
