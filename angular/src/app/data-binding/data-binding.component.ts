@@ -6,17 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.less']
 })
 export class DataBindingComponent implements OnInit {
- url:string = 'http://www.google.com'
+  url: string = 'http://www.google.com'
+  
+  valorInput:string = "";
+  valorSalvoInput :string="";
 
- cursoAngular:boolean = true;
- urlImage = 'http://lorempixel.com/400/200/';
+  cursoAngular: boolean = true;
+  urlImage = 'http://lorempixel.com/400/200/';
 
- getValor(){
-   return 1;
- }
- getCurtirCurso(){
-   return true;
- }
+  salvarValor( valor ){
+    this.valorSalvoInput = valor;
+  }
+
+  onKeyUp(evento: KeyboardEvent ) {
+
+
+    this.valorInput = ((<HTMLInputElement>evento.target).value);
+   
+  }
+  botaoclickado() {
+    alert("evento criado pelo botao clickado");
+  }
+
+  getValor() {
+    return 1;
+  }
+  getCurtirCurso() {
+    return true;
+  }
   constructor() { }
 
   ngOnInit() {
