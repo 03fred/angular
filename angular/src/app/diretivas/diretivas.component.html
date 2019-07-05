@@ -1,4 +1,4 @@
-<h5>*ngIf</h5>
+<h5>*Diretivas *ng</h5>
 
 <article>
     <!-- 
@@ -16,7 +16,7 @@
         </div>
 
         <button (click)="adicionarCursos()">Mostrar Cursos</button>
-    </section>-->
+    </section>
     <section>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -40,5 +40,21 @@
         </div>
 
 
+    </section>-->
+
+    <section>
+
+        <ul>
+            <li *ngFor="let curso of cursosFor , let i = index">
+                {{ i + 1 }} - {{ curso }}
+
+            </li>
+
+        </ul>
+
+
+
     </section>
+
+
 </article>

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas.component.less']
 })
 export class DiretivasComponent implements OnInit {
-  aba = 'home';
+ 
+ cursosFor: string[] = ['Angular','Java','Phonegap'];
+ 
+  // aba = 'home';
 
 
   /*listaCursos: string[] = [];
@@ -22,6 +25,12 @@ export class DiretivasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+   for(let i =0; i < this.cursosFor.length;i++){
+       let cursosFor = this.cursosFor[i];
+
+   }
+
   }
 
 }
