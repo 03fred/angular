@@ -6,15 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas.component.less']
 })
 export class DiretivasComponent implements OnInit {
- aberto: boolean = false;
+
+ativo: boolean = false;
+tamanhoFonte: number = 10;
+
+
+mudarAtivo(){
+this.ativo = !this.ativo;
+
+}
+/*
+  aberto: boolean = false;
 
  mudarAbertoFechado()
 {
   this.aberto = !this.aberto;
 } 
-  // aba = 'home';
+   aba = 'home';
 
-
+*/
   /*listaCursos: string[] = [];
 
   mostrarCursos: boolean = false;
