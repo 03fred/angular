@@ -1,0 +1,44 @@
+<h5>*ngIf</h5>
+
+<article>
+    <!-- 
+        
+<div *ngIf="listaCursos.length > 0">
+    Lista de Cursos maior que 0;
+</div>
+        <section>
+        <div *ngIf="listaCursos.length == 0">
+            Lista de Cursos igual a 0;
+        </div>
+
+        <div [hidden]="mostrarCursos">
+            mostrar cursos igual a true;
+        </div>
+
+        <button (click)="adicionarCursos()">Mostrar Cursos</button>
+    </section>-->
+    <section>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+                    <a class="nav-item nav-link" [class.active]="aba == 'mapa'" (click)="aba = 'mapa'">Mapa</a>
+                    <a class="nav-item nav-link" [class.active]="aba == 'lista'" (click)="aba = 'lista'">Lista</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" [ngSwitch]="aba">
+            <p *ngSwitchCase="'mapa'">Modo mapa ativado</p>
+            <p *ngSwitchCase="'lista'">Modo lista ativado</p>
+            <p *ngSwitchDefault>Modo home ativado</p>
+
+        </div>
+
+
+    </section>
+</article>

@@ -17,7 +17,7 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   urlImage = 'http://lorempixel.com/400/200/';
   nome: string = "abc";
-  nomeDoCurso: string = "angular";
+   nomeDoCurso: string = "angular";
   valorInicial = 15;
 
   onMouseOverOut() {
@@ -48,10 +48,7 @@ export class DataBindingComponent implements OnInit {
   onMudouValor(evento) {
     console.log(evento);
   }
-
-  
   constructor() { }
-
   ngOnInit() {
   }
 
