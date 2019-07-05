@@ -40,7 +40,7 @@
         </div>
 
 
-    </section>-->
+    </section>
 
     <section>
 
@@ -56,5 +56,25 @@
 
     </section>
 
+-->
+
+    <section>
+
+        <h1>
+            Property bind
+            <i class="fa" [class.fa-folder-o]="!aberto" [class.fa-folder-open]="aberto" (click)="mudarAbertoFechado()"></i>
+        </h1>
+
+
+        <h1>
+            ngClass
+            <i class="fa" [ngClass]="{
+                    'fa-folder-o':!aberto,
+                    'fa-folder-open':aberto
+                    
+                }" (click)="mudarAbertoFechado()"></i>
+
+        </h1>
+    </section>
 
 </article>

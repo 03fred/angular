@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas.component.less']
 })
 export class DiretivasComponent implements OnInit {
- 
- cursosFor: string[] = ['Angular','Java','Phonegap'];
- 
+ aberto: boolean = false;
+
+ mudarAbertoFechado()
+{
+  this.aberto = !this.aberto;
+} 
   // aba = 'home';
 
 
@@ -20,17 +23,16 @@ export class DiretivasComponent implements OnInit {
   this.listaCursos[0] = 'angular';
   this.mostrarCursos = !this.mostrarCursos;
   }
+ cursosFor: string[] = ['Angular','Java','Phonegap'];
+  for(let i =0; i < this.cursosFor.length;i++){
+       let cursosFor = this.cursosFor[i];
+
+   }
 */
 
   constructor() { }
 
   ngOnInit() {
-
-   for(let i =0; i < this.cursosFor.length;i++){
-       let cursosFor = this.cursosFor[i];
-
-   }
-
   }
 
 }
