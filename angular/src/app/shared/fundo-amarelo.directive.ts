@@ -1,7 +1,7 @@
 import { Directive, ElementRef,Renderer } from '@angular/core';
 
 @Directive({
-  selector: '[fundoAmarelo]'
+  selector: 'button[fundoAmarelo]'
 })
 export class FundoAmareloDirective {
 
