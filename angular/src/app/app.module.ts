@@ -11,6 +11,7 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 
 
 
@@ -23,7 +24,8 @@ import { DiretivasComponent } from './diretivas/diretivas.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     CicloComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    ExemploNgContentComponent
   ],
   imports: [
     BrowserModule,
