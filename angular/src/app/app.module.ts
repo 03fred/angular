@@ -12,6 +12,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
 import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 
 
@@ -25,7 +27,9 @@ import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-conte
     OutputPropertyComponent,
     CicloComponent,
     DiretivasComponent,
-    ExemploNgContentComponent
+    ExemploNgContentComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule,
