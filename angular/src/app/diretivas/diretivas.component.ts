@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasComponent implements OnInit {
 
+  tarefa: any = {
+    desc: 'Descrição da tarefa',
+    responsavel : null
+
+  };
+
+
+  /*
 ativo: boolean = false;
 tamanhoFonte: number = 10;
 
@@ -15,7 +23,7 @@ mudarAtivo(){
 this.ativo = !this.ativo;
 
 }
-/*
+
   aberto: boolean = false;
 
  mudarAbertoFechado()

@@ -75,7 +75,6 @@
 
         </h1>
     </section>
--->
 
     <section>
 
@@ -100,6 +99,14 @@
             Mudar atributo 'ativo'
 
         </button>
+    </section>-->
+
+    <section>
+
+        <p>{{ tarefa.desc }}</p>
+        <!-- <p>{{ tarefa.responsavel != null ? tarefa.responsavel.nome : ''}}</p>-->
+        <p>Responsável: {{ tarefa.responsavel?.nome}} </p>
+
     </section>
 
 </article>
