@@ -19,6 +19,7 @@ import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { ServicesComponent } from './services/services.component';
 import { CursoService } from './services/curso.service';
+import { CriarCursoModule } from './criar-curso/criar-curso.module';
 
 
 
@@ -38,13 +39,15 @@ import { CursoService } from './services/curso.service';
     HighlightMouseDirective,
     HighlightDirective,
     NgElseDirective,
-    ServicesComponent
+    ServicesComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CursosModule,
-    FormsModule
+    FormsModule,
+    CriarCursoModule
   ],
   providers: [CursoService],
   bootstrap: [AppComponent]
