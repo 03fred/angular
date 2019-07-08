@@ -2,3 +2,14 @@
 <button fundoAmarelo>botao com fundo amarelo</button>
 
 <p [highlight]="'red'" [defaultColor]="'gray'">Texto com highlight com corees customizadas</p>
+
+
+<div [hidden]="mostrarCursos">
+    mostrar cursos igual a false;
+</div>
+
+<div *ngElse="mostrarCursos">
+    mostrar cursos igual a false;
+</div>
+
+<button (click)="onMostrarCursos()">Mostrar Cursos</button>

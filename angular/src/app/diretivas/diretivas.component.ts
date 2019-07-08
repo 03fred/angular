@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasComponent implements OnInit {
 
+
+  /*
   tarefa: any = {
     desc: 'Descrição da tarefa',
     responsavel : null
@@ -14,7 +16,7 @@ export class DiretivasComponent implements OnInit {
   };
 
 
-  /*
+    
 ativo: boolean = false;
 tamanhoFonte: number = 10;
 
