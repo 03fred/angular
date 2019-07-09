@@ -18,8 +18,9 @@ import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { ServicesComponent } from './services/services.component';
-import { CursoService } from './services/curso.service';
 import { CriarCursoModule } from './criar-curso/criar-curso.module';
+import { CursoService } from './services/curso.service';
+import { LogService } from './shared/log.service';
 
 
 
@@ -49,7 +50,7 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
     FormsModule,
     CriarCursoModule
   ],
-  providers: [CursoService],
+  providers: [CursoService,LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

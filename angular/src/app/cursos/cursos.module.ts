@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CursosComponent } from "./CursosComponent";
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { CursosService } from './cursos.service';
+import { CursosComponent } from './cursos.component';
 
 @NgModule({
   declarations: [CursosComponent, CursoDetalheComponent],
