@@ -21,6 +21,7 @@ import { ServicesComponent } from './services/services.component';
 import { CriarCursoModule } from './criar-curso/criar-curso.module';
 import { CursoService } from './services/curso.service';
 import { LogService } from './shared/log.service';
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 
 
 
@@ -41,6 +42,7 @@ import { LogService } from './shared/log.service';
     HighlightDirective,
     NgElseDirective,
     ServicesComponent,
+    ExemplosPipesComponent,
     
   ],
   imports: [
