@@ -22,6 +22,7 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
 import { CursoService } from './services/curso.service';
 import { LogService } from './shared/log.service';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 
 
@@ -43,6 +44,7 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
     NgElseDirective,
     ServicesComponent,
     ExemplosPipesComponent,
+    CamelCasePipe,
     
   ],
   imports: [

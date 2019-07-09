@@ -10,7 +10,8 @@ export class ExemplosPipesComponent implements OnInit {
   book: any = {
     paginas: 100,
     preco: 59.90,
-    lancamento: new Date(2019,5,23)
+    lancamento: new Date(2019,5,23),
+    titulo: 'Filme do Pelé'
 
   }
   constructor() { }
