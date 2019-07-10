@@ -5,3 +5,12 @@
 <p>Preço : {{ book.preco | currency:'BRL' }}</p>
 <p>Preço : {{ book.lancamento | date:'dd-MMM-yyyy' }}</p>
 <p>{{ book | json }}</p>
+
+<p>Livros</p>
+<input type="text" #input />
+<button (click)="transform()">teste</button>
+<ul>
+    <li *ngFor="let liv of books | filtroArray:input.value">
+        {{liv}}
+    </li>
+</ul>

@@ -25,6 +25,7 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
 import { CamelCasePipe } from './camel-case.pipe';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { FiltroArrayPipe } from './filtro-array.pipe';
 registerLocaleData(localePt, 'pt');
 
 
@@ -48,6 +49,7 @@ registerLocaleData(localePt, 'pt');
     ServicesComponent,
     ExemplosPipesComponent,
     CamelCasePipe,
+    FiltroArrayPipe,
     
   ],
   imports: [

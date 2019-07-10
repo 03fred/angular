@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExemplosPipesComponent implements OnInit {
 
+
   book: any = {
     paginas: 100,
     preco: 59.90,
@@ -14,6 +15,7 @@ export class ExemplosPipesComponent implements OnInit {
     titulo: 'Filme do Pelé'
 
   }
+  books: string[] = ['Angular2','Java'];
   constructor() { }
 
   ngOnInit() {
